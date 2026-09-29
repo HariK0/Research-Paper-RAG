@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+:root { font-family: 'DM Sans', sans-serif; color: #222b25; background: #f6f7f4; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+.shell { width: min(100% - 48px, 840px); margin: 0 auto; padding: 100px 0 32px; min-height: 100vh; display: flex; flex-direction: column; }
+.eyebrow, footer { font: 500 11px 'DM Mono', monospace; letter-spacing: .12em; color: #718078; }
+.status-dot { display: inline-block; width: 7px; height: 7px; margin-right: 9px; border-radius: 50%; background: #6a9878; }
+h1 { margin: 54px 0 22px; font-size: clamp(48px, 8vw, 82px); line-height: 1.03; letter-spacing: -.055em; font-weight: 500; }
+h1 em { color: #588369; font: 600 italic .98em 'Playfair Display', serif; letter-spacing: -.04em; }
+.intro { max-width: 510px; color: #68736c; font-size: 17px; line-height: 1.7; }
+.setup-card { display: flex; align-items: center; gap: 18px; margin-top: 56px; padding: 20px; border: 1px solid #e0e5de; border-radius: 10px; background: #fff; box-shadow: 0 8px 24px #25372b08; }
+.card-mark { display: grid; place-items: center; flex: 0 0 42px; height: 42px; border-radius: 8px; background: #eaf1eb; color: #50745c; font: 600 20px 'Playfair Display', serif; }
+.setup-card strong { font-size: 14px; }
+.setup-card p { margin: 5px 0 0; color: #778079; font-size: 13px; line-height: 1.5; }
+.setup-card a { margin-left: auto; white-space: nowrap; color: #51765e; font-size: 13px; text-decoration: none; }
+footer { margin-top: auto; padding-top: 80px; font-size: 10px; } footer span { padding: 0 8px; }
+@media (max-width: 560px) { .shell { padding-top: 64px; } h1 { margin-top: 44px; } .setup-card { align-items: flex-start; flex-wrap: wrap; } .setup-card a { margin-left: 60px; } }

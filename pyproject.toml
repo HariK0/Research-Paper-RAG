@@ -1,0 +1,10 @@
+[project]
+name = "research-paper-rag-assistant"
+version = "0.1.0"
+description = "A research paper RAG assistant scaffold"
+requires-python = ">=3.12,<3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["backend"]
+addopts = "-ra"
